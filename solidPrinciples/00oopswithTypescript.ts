@@ -167,6 +167,22 @@ circle.display(); // Output: Area: 78.53981633974483
 
 // In this updated TypeScript file, I have added explanations and examples of interfaces and abstract classes. Interfaces define contracts for implementing classes, while abstract classes provide a common structure and behavior for derived classes. These concepts further enhance the object-oriented programming experience in TypeScript.
 
+//Overiding parent class in Typescript
+class Parent {
+  greet() {
+    console.log("Hello, I am the parent.");
+  }
+}
+
+class Child extends Parent {
+  override greet() {
+    console.log("Hello, I am the child.");
+  }
+}
+
+const child = new Child();
+child.greet(); // Output: Hello, I am the child.
+
 export {};
 /*
   In TypeScript, the export {} syntax is used as a workaround in certain situations to indicate that a file is an ES module, even if it doesn't export anything explicitly. When you use this syntax, it acts as a placeholder export statement, telling TypeScript that the file is intended to be treated as a module.
