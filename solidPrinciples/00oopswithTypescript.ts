@@ -123,3 +123,45 @@ class Person {
   performSound(dog); // Output: Dog barks.
   performSound(cat); // Output: Cat meows.
   
+  // Interfaces:
+  // Interfaces in TypeScript define contracts for implementing classes. They allow you to specify the expected shape of an object, including property names, types, and method signatures. Here's an example:
+  
+  interface Printable {
+    print(): void;
+  }
+  
+  class Document implements Printable {
+    print() {
+      console.log('Printing document...');
+    }
+  }
+  
+  const doc = new Document();
+  doc.print(); // Output: Printing document...
+  
+  // Abstract Classes:
+  // Abstract classes are base classes that cannot be instantiated directly but can be inherited by other classes. They provide a common structure and behavior that derived classes can extend and implement. Abstract classes can have abstract methods, which are methods without an implementation. Here's an example:
+  
+  abstract class Shape {
+    abstract calculateArea(): number;
+  
+    display() {
+      console.log(`Area: ${this.calculateArea()}`);
+    }
+  }
+  
+  class Circle extends Shape {
+    constructor(private radius: number) {
+      super();
+    }
+  
+    calculateArea() {
+      return Math.PI * this.radius ** 2;
+    }
+  }
+  
+  const circle = new Circle(5);
+  circle.display(); // Output: Area: 78.53981633974483
+  
+  // In this updated TypeScript file, I have added explanations and examples of interfaces and abstract classes. Interfaces define contracts for implementing classes, while abstract classes provide a common structure and behavior for derived classes. These concepts further enhance the object-oriented programming experience in TypeScript.
+  
