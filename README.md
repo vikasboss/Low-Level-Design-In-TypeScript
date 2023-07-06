@@ -1,4 +1,4 @@
-# Low-Level Design in Typescipt
+# Low-Level Design in Typescript
 
 This repository provides examples and exercises for low-level design concepts implemented in TypeScript. It covers various topics related to object-oriented programming, TypeScript, SOLID principles, and design patterns.
 
