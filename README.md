@@ -16,6 +16,8 @@ To get started, it is recommended to follow the learning path outlined below:
 
 5. **Design Patterns**: Dive into various design patterns and learn how they can be implemented in Node.js applications. Understand their purposes, advantages, and when to apply them.
 
+6. **Low Level Design Questions**: Dive into low level design Questions.
+
 Feel free to explore the code examples and exercises provided in this repository as you progress through the learning path. Happy coding!
 
 ## Contributing
