@@ -1,6 +1,6 @@
-# Low-Level Design in Node.js
+# Low-Level Design in Typescipt
 
-This repository provides examples and exercises for low-level design concepts implemented in Node.js. It covers various topics related to object-oriented programming, TypeScript, SOLID principles, and design patterns.
+This repository provides examples and exercises for low-level design concepts implemented in TypeScript. It covers various topics related to object-oriented programming, TypeScript, SOLID principles, and design patterns.
 
 ## Order of Learning
 
