@@ -1,0 +1,29 @@
+Design (LLD) distributed search engine - Machine Coding
+Features Required:
+
+Crawling: The search engine should be able to crawl web pages, extract relevant information, and store it for indexing.
+
+Indexing: The search engine should create an index of the crawled web pages. It should extract keywords, build an inverted index, and store it for efficient retrieval.
+
+Query Processing: The search engine should process user queries and retrieve relevant results from the index. It should handle different types of queries, such as keyword-based queries and advanced search queries.
+
+Ranking: The search engine should rank the search results based on relevance. It should apply ranking algorithms to determine the order in which the results are displayed to the user.
+
+Distributed Architecture: The search engine should be designed as a distributed system to handle large-scale crawling, indexing, and query processing. It should distribute the workload across multiple machines for scalability and fault tolerance.
+
+Scalability: The search engine should be able to handle a large volume of web pages and queries. It should be designed for horizontal scalability by adding more machines to the system.
+
+Fault Tolerance: The search engine should be resilient to failures. It should handle machine failures, network issues, and recover gracefully without data loss.
+
+User Interface: The search engine should provide a user-friendly interface for users to enter queries and view search results. It can be a web-based interface or an API.
+
+Design Patterns Involved or Used:
+
+Master-Worker: The distributed search engine can use the master-worker pattern to distribute tasks, such as crawling and query processing, across multiple machines. The master node assigns tasks to worker nodes and coordinates their execution.
+
+Publish-Subscribe: The search engine can use the publish-subscribe pattern to notify components about events and updates. For example, when new web pages are crawled and indexed, the indexing module can publish the updates, and the query processing module can subscribe to receive the updates.
+
+Replication: The search engine can use replication to ensure fault tolerance and data availability. For example, the crawled data and the index can be replicated across multiple machines, allowing the system to continue functioning even if some machines fail.
+
+Load Balancing: The search engine can use load balancing techniques to distribute queries evenly across the query processing nodes. This ensures that no node is overloaded and provides better performance.
+

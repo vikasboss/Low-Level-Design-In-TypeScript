@@ -1,0 +1,83 @@
+How should we start with LLD
+We should first collect all the requirements
+and then we will draw the UML Diagram
++ public - private and #means protectted
+underline means static
+Refer to image class Diagram
+
+Type of RELATIONSHIP
+Look at the diagram to get clear picture
+
+if class can belong to multiple classes then it will not be composition relationship it will be aggragation
+example:person and house  because house there will be many person same instances will be there  in diiferent people
+in composition entire existence of the class should be managed by the class
+
+association:uses
+aggragation:has an 
+composition:part of
+Inheritance:is a relationship
+
+
+Bulb has a filament --> composition
+House has a bulb --> aggregation
+
+
+
+Association:
+In an association relationship, two classes are connected, but they can exist independently. It can be represented by a simple line between the classes, optionally with an arrow indicating the direction of the relationship.
+
+Aggregation:
+Aggregation is a special form of association where a class represents a part of a whole. It can be represented by a line with a hollow diamond at the end pointing towards the whole class.
+
+Composition:
+Composition is a stronger form of aggregation where the parts cannot exist independently. It can be represented by a line with a filled diamond at the end pointing towards the whole class.
+
+Inheritance:
+Inheritance represents an "is-a" relationship, where one class inherits from another. It can be represented by a line with an arrowhead pointing from the derived class to the base class.
+
+Dependency:
+Dependency represents a temporary relationship where one class depends on another. It can be represented by a dashed line with an arrow pointing from the dependent class to the class it depends on.
+
+
+
+
+Association:
+
+  +--------+          +--------+
+  | ClassA | -------- | ClassB |
+  +--------+          +--------+
+
+Aggregation:
+   +--------+          +--------+
+   | ClassA | -------- | ClassB |
+   +--------+          +--------+
+        ▲
+        |
+    Aggregation
+
+
+
+Composition
+   +--------+          +--------+
+   | ClassA | -------- | ClassB |
+   +--------+          +--------+
+        ▲
+        |
+   Composition
+
+Inheritance:
+   +--------+          +--------+
+   | ClassA | <-------- | ClassB |
+   +--------+          +--------+
+      ▲
+      |
+ Inheritance
+Dependency:
+   +--------+          +--------+
+   | ClassA | -------- | ClassB |
+   +--------+          +--------+
+        ▲
+        |
+   Dependency
+
+
