@@ -1,0 +1,10 @@
+Designing a news feed system using object-oriented programming in a language like Java would involve creating several classes to represent different aspects of the system. Here is an example of how the classes might be organized:
+
+Article class - This class would represent an individual article in the news feed. It would have properties such as the title, author, content, and timestamp of the article.
+
+User class - This class would represent a user of the news feed. It would have properties such as the user's name, email, and list of subscribed topics. It would also have methods to subscribe or unsubscribe from topics.
+
+Topic class - This class would represent a topic that articles can be categorized under. It would have properties such as the topic name and a list of articles associated with that topic.
+
+NewsFeed class - This class would be the main class of the system. It would have properties such as a list of articles, list of users, and list of topics. It would also have methods to add or remove articles, add or remove users, and add or remove topics. It would also have methods to return a list of articles based on topic, user and time.
+
